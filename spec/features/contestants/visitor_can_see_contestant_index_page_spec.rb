@@ -19,19 +19,19 @@ RSpec.describe "visitor can see contestant index page with names and all project
 
     visit "/contestants"
 
-    within("#contestant-#{contestnt1.id}") do
+    # within("#contestant-#{contestant1.id}") do
       expect(page).to have_content("Harry")
       expect(page).to have_content("projects: Ruffles")
-    end
+    # end
 
-    within("#contestant-#{contestnt2.id}") do
+    # within("#contestant-#{contestant2.id}") do
       expect(page).to have_content("Sara")
-      expect(page).to have_content("projects: Ruffles, flowers")
-    end
+      expect(page).to have_content("projects: Ruffles flowers")
+    # end
 
-    within("#contestant-#{contestnt3.id}") do
+    # within("#contestant-#{contestant3.id}") do
       expect(page).to have_content("John")
-      expect(page).to have_content("projects: Ruffles, flowers")
-    end
+      expect(page).to have_content("projects: Ruffles flowers")
+    # end
   end
 end

@@ -243,12 +243,36 @@
           1,
           null,
           1,
+          1,
           null
         ]
       },
       "/Users/cassieachzenick/turing/mod2/challenges/make_it_work/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/cassieachzenick/turing/mod2/challenges/make_it_work/spec/features/projects/visitor_can_go_to_projects_show_page_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -362,7 +386,7 @@
           null
         ]
       },
-      "/Users/cassieachzenick/turing/mod2/challenges/make_it_work/app/controllers/projects_controller.rb": {
+      "/Users/cassieachzenick/turing/mod2/challenges/make_it_work/app/controllers/contestants_controller.rb": {
         "lines": [
           1,
           1,
@@ -376,8 +400,17 @@
           1,
           null
         ]
+      },
+      "/Users/cassieachzenick/turing/mod2/challenges/make_it_work/app/controllers/projects_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1581097998
+    "timestamp": 1581099667
   }
 }
