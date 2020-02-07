@@ -6,14 +6,26 @@ RSpec.describe "visitor sees projects name, material and the theme of the challe
     project1 = Project.create!(name: "Ruffles", material: "Bows", challenge: challenge1)
     project2 = Project.create!(name: "flowers", material: "only real flowers", challenge: challenge1)
 
-    visit "/projects"
+    contestant1 = Contestant.create!(name: "Harry", age: "45", hometown: "Somewhere unimpressive", years_of_experience: "3")
+    contestant2 = Contestant.create!(name: "Sara", age: "63", hometown: "New York", years_of_experience: "6")
+    contestant3 = Contestant.create!(name: "John", age: "34", hometown: "Baltimore", years_of_experience: "32")
 
-    expect(page).to have_content("name: Ruffles")
-    expect(page).to have_content("material: Bows")
-    expect(page).to have_content("challenge theme: Roses")
+    project1.contestants << contestant1
+    project1.contestants << contestant2
+    project1.contestants << contestant3
+    project2.contestants << contestant2
+    project2.contestants << contestant3
 
-    expect(page).to have_content("name: flowers")
-    expect(page).to have_content("material: only real flowers")
-    expect(page).to have_content("challenge theme: Roses")
+    visit "/projects/#{project1.id}"
+
+    expect(page).to have_content("Ruffles")
+    expect(page).to have_content("Material: Bows")
+    expect(page).to have_content("Challenge Theme: Roses")
+
+    visit "/projects/#{project2.id}"
+
+    expect(page).to have_content("flowers")
+    expect(page).to have_content("Material: only real flowers")
+    expect(page).to have_content("Challenge Theme: Roses")
   end
 end
