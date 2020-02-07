@@ -242,6 +242,7 @@
         "lines": [
           1,
           null,
+          1,
           null
         ]
       },
@@ -360,8 +361,23 @@
           1,
           null
         ]
+      },
+      "/Users/cassieachzenick/turing/mod2/challenges/make_it_work/app/controllers/projects_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/cassieachzenick/turing/mod2/challenges/make_it_work/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1581097534
+    "timestamp": 1581097998
   }
 }
