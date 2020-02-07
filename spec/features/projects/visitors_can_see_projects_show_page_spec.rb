@@ -50,7 +50,7 @@ RSpec.describe "A visitor can see a projects show page" do
 
     visit "/projects/#{project1.id}"
 
-    expect(page).to have_content("Average Contestant Experience: 13.6 years")
+    expect(page).to have_content("Average Contestant Experience: 13.7 years")
 
     visit "/projects/#{project2.id}"
 
